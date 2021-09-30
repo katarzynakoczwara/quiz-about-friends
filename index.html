@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae5e81fa28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-message">
+            <div class="upper-part">
+                <span class="letter">F</span>
+                <span class="dot red"></span>
+                <span class="letter">r</span>
+                <span class="dot blue"></span>
+                <span class="letter">i</span>
+                <span class="dot yellow"></span>
+                <span class="letter">e</span>
+                <span class="dot red"></span>
+                <span class="letter">n</span>
+                <span class="dot blue"></span>
+                <span class="letter">d</span>
+                <span class="dot yellow"></span>
+                <span class="letter">s</span>
+            </div>
+            <div class="middle-part">
+                <input type="text" class="input" placeholder="Type your nickname">
+                <p class="error">Please, fill the input</p>
+                <button class="start-btn">start game</button>
+            </div>           
+            <div class="lower-part">
+                <span class="letter">Q</span>
+                <span class="dot red"></span>
+                <span class="letter">u</span>
+                <span class="dot blue"></span>
+                <span class="letter">i</span>
+                <span class="dot yellow"></span>
+                <span class="letter">z</span>
+            </div>
+        </div>
+        <div class="question-container hide">
+            <div class="question-header">
+                <p class="question-number">Question 1 / 10</p>
+                <p class="scores">0 scores</p>                
+            </div>   
+            <h3 class="question"></h3>         
+            <div class="answers-container">
+            </div>
+            <button class="next-btn"><i class="fas fa-arrow-right"></i></button>           
+        </div>  
+        <div class="end-game hide">
+            <h3 class="result"></h3>
+            <button class="score-btn">High Scores</button>
+            <button class="restart-btn">Restart</button>
+        </div>
+        <div class="results hide">
+            <h3>Scores</h3>
+            <ul class="score-list"></ul>
+            <button class="restart-btn">Restart</button>
+        </div>         
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
