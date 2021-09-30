@@ -221,7 +221,9 @@ nextBtn.addEventListener('click', setQuestion);
 scoresBtn.addEventListener('click', showHighScores);
 restartBtn.forEach(btn => {
     btn.addEventListener('click', () => {
-        window.location.assign('/');
+        // console.log(window.location.href)
+        const url = window.location.href;
+        window.location.assign(url);
     })
 });
 
