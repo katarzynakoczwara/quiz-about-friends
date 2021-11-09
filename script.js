@@ -166,14 +166,19 @@ const setQuestion = () => {
 }
 
 const checkAnswer = (e) => {
-    nextBtn.style.visibility = 'visible';
+    
     const button = e.target;
     if(answerArray.indexOf(button) === indexOfCorrectAnswer) {
         button.classList.add('correct');
         scores += 100;
         scoresContainer.textContent = `${scores} Scores`;
+        nextBtn.style.visibility = 'visible';
     } else {
-        button.classList.add('wrong')
+        button.classList.add('wrong');
+        setTimeout(() => {
+            answerArray[indexOfCorrectAnswer].classList.add('correct');
+            nextBtn.style.visibility = 'visible';
+        }, 200)
     }
 
     answerArray.forEach(answer => {
